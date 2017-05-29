@@ -7,7 +7,7 @@ function setup() {
   createCanvas(400,600);
   bird = new Bird();
   pipes.push(new Pipe());
-  scorer = document.getElementById("score");
+  // scorer = document.getElementById("score");
 
 }
 
@@ -31,7 +31,7 @@ function draw() {
       pipes.splice(i,1);
     }
   }
-  scorer.html(score);
+  // scorer.html(score);
   //
 }
 
