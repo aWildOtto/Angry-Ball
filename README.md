@@ -4,7 +4,7 @@ A simple clone of Flappy bird using p5.js framework
 Based on https://www.youtube.com/watch?v=cXgA1d_E-jY
 
 ## Screenshots
-![gameplay](/imgs/1.png)
+![gameplay](/imgs/1.PNG)
 
 ## Usage
 Open index.html in browser
