@@ -29,17 +29,19 @@ function Bird(){
   }
 
   this.hits = function(pipe){
-    if (this.x+this.birdSize>=pipe.pipePos&&this.x+this.birdSize<=pipe.pipePos+pipe.width) {
-      if (this.y<=pipe.topPipe||this.y+this.birdSize>=pipe.topPipe+pipe.gap) {
-        score -= 50;
+    if (this.x + this.birdSize >= pipe.pipePos && this.x + this.birdSize <= pipe.pipePos + pipe.width) {
+      if (this.y - this.birdSize/2 <= pipe.topPipe || this.y + this.birdSize/2 >= pipe.topPipe + pipe.gap) {
+        score -= 20;
         return true;
+      }else{
+        score += 10;
       }
     }
-    score += 100;
+    
     return false;
   }
 
   this.rush = function(){
-    
+
   }
 }
